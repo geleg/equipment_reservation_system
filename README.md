@@ -48,7 +48,11 @@ To run the project locally, follow these steps:
 3. Open server folder and install dependencies using `npm install`.
 4. Set up the database with MongoDB.
 5. Configure authentication settings.
-6. Run the application in server folder using `npm run dev` and in frontend folder using `npm start`.
+6. Create a .env file in the server folder and add the following variables:
+    - PORT=your_port
+    - URI=your_mongodb_uri
+    - SECRET=your_jwt_secret
+7. Run the application in server folder using `npm run dev` and in frontend folder using `npm start`.
 
 ## Contributors
 
