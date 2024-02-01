@@ -1,60 +1,88 @@
-# Project README
+# Equipment Reservation and Management System
 
 ## Overview
 
-The project is a reservation and management system for equipment. This system is designed to allow administrators to add available equipment to the system, while users can reserve and rent it. Intelligent restrictions should be in place, such as disallowing reservations in the past, and so on. Access to the system is restricted to authenticated users only. There are two user roles in the system: administrator, responsible for creating and updating equipment, as well as confirming reservations; and regular users, who can browse available equipment and make reservations.
+Welcome to the Equipment Reservation and Management System! This is a robust solution designed to simplify equipment management, allowing administrators to seamlessly add equipment, while users can easily reserve and rent it. The system enforces intelligent restrictions, ensuring a smooth experience for all users.
 
-## Project Requirements / Features
+### Key Features
 
-### General Requirements
+- **User Roles:** Two distinct roles - administrators with equipment management privileges, and regular users with reservation capabilities.
+- **Technologies Used:** React, Node.js/Express, and MongoDB, all intricately connected to provide a seamless experience.
+- **Responsive Design:** The system is designed to be responsive across different screen resolutions.
+- **Authentication:** Access is restricted to authenticated users, ensuring data security.
 
-- The system is developed using React, Node.js/Express, and MongoDB. All these components are interconnected.
-- User authentication is implemented in the system.
-- The system's design is responsive to screen resolution.
-- Fully implemented functionality is a little tested with Unit tests.
+## Requirements
 
 ### Common User Actions
 
-All users, regardless of their role, can perform the following actions:
+All users, regardless of their role, can:
 
-- View the list of equipment registered in the system.
-- View information about selected equipment.
+- View the list of available equipment.
+- Access detailed information about specific equipment.
 
 ### Administrator Actions
 
-Administrators can perform the following actions:
+Administrators have additional privileges:
 
-- Create new equipment in the system.
-- Update equipment information.
-- Change equipment status (Not draft, draft).
-- View all reservations.
-- Change the status of a selected reservation (approved, not approved, rented).
+- Create and update equipment entries.
+- Change equipment status (e.g., from draft to not draft).
+- Monitor all reservations.
+- Approve, disapprove, or mark reservations as rented.
 
 ### Regular User Actions
 
-Regular users can perform the following actions:
+Regular users can:
 
-- View their reservations.
-- Create a new reservation.
-- Update reservation information (e.g., change the date).
-- Cancel a reservation.
+- View their reservation history.
+- Create new reservations.
+- Modify reservation details (e.g., change dates).
+- Cancel reservations.
 
 ## Getting Started
 
 To run the project locally, follow these steps:
 
-1. Clone the repository.
-2. Open frontend folder and install dependencies using `npm install`.
-3. Open server folder and install dependencies using `npm install`.
-4. Set up the database with MongoDB.
-5. Configure authentication settings.
-6. Create a .env file in the server folder and add the following variables:
-    - PORT=your_port
-    - URI=your_mongodb_uri
-    - SECRET=your_jwt_secret
-7. Run the application in server folder using `npm run dev` and in frontend folder using `npm start`.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/geleg/equipment-reservation-system.git
+   ```
+
+2. **Install Dependencies:**
+   - Navigate to the frontend folder:
+     ```bash
+     cd frontend
+     npm install
+     ```
+   - Navigate to the server folder:
+     ```bash
+     cd server
+     npm install
+     ```
+
+3. **Set Up MongoDB:**
+   - Ensure you have MongoDB installed and running.
+   - Configure the MongoDB URI in the server's .env file.
+
+4. **Configure Authentication:**
+   - Set up authentication settings.
+   - Create a .env file in the server folder and add the following variables:
+     - `PORT=your_port`
+     - `URI=your_mongodb_uri`
+     - `SECRET=your_jwt_secret`
+
+5. **Run the Application:**
+   - In the server folder, run:
+     ```bash
+     npm run dev
+     ```
+   - In the frontend folder, run:
+     ```bash
+     npm start
+     ```
 
 ## Contributors
+
+A big shoutout to our awesome contributors who made this project possible:
 
 - [geleg](https://github.com/geleg)
 - [justegu](https://github.com/justegu)
@@ -62,3 +90,5 @@ To run the project locally, follow these steps:
 - [GytisMal](https://github.com/GytisMal)
 - [Dj50Grosh](https://github.com/Dj50Grosh)
 - [OlgaNovickova](https://github.com/OlgaNovickova)
+
+Feel free to explore, contribute, and make this project even better! 🚀
